@@ -1,0 +1,45 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  html,
+  body {
+    @apply h-full;
+    font-family: "Bungee", cursive;
+  }
+  p {
+    font-family: "Montserrat", sans-serif;
+  }
+
+  /* button text color fix */
+  /* :root {
+    --pc: "0 0% 100%";
+  } */
+
+  /* menu active state */
+  #root .btm-nav > *:where(.active) {
+    @apply bg-secondary-content;
+  }
+
+  h1 {
+    text-shadow: 3px 3px 7px #000;
+  }
+
+  .split .char {
+    font-kerning: none;
+  }
+
+  /*scrollbar*/
+  .modal-box::-webkit-scrollbar {
+    @apply w-3;
+  }
+
+  .modal-box::-webkit-scrollbar-track {
+    @apply bg-neutral;
+  }
+
+  .modal-box::-webkit-scrollbar-thumb {
+    @apply bg-secondary rounded border border-primary;
+  }
+}
